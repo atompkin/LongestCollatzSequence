@@ -4,10 +4,10 @@ ratdemo: main.o rational.o
 	g++ -o ratdemo main.o rational.o
 
 main.o : main.cpp rational.h
-	g++ -c -main.o main.cpp
+	g++ -c main.cpp
 
 rational.o: rational.h rational.cpp
-	g++ -c -rational.o rational.cpp
+	g++ -c rational.cpp
 clean:
 	rm -f ratdemo
 	rm -f main.o
